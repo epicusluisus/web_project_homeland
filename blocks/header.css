@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    padding-top: 92px;
+}
+
+.header__container {
+    display: flex;
+    max-width: 720px;
+    margin: 0 auto 64px;
+    flex-direction: column;
+    color: #fff;
+    gap: 32px;
+}
+
+.header__title {
+    font-size: 96px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.header__subtitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.header__image {
+    width: 100%;
+}

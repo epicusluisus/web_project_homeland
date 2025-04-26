@@ -255,3 +255,10 @@
 :where(summary) {
   display: list-item;
 }
+
+/* added this sht myself */
+
+html, body, body div, span, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
