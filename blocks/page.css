@@ -1,11 +1,12 @@
 .page {
-    background-color: #2a2c2f;
-    margin: 0;
+    max-width: 984px;
+    margin: auto;
     font-family: "Inter", sans-serif;
     font-weight: normal;
 }
 
-.page__container {
-    max-width: 984px;
-    margin: auto;
+html {
+    background-color: #2a2c2f;
 }
+
+/* se que no es BEM utilizar selectores de elementos pero en mi version anterior tenia un .page y un .page__container y el checador automático me lo rechazó por que "La etiqueta <header> debe ser hija de div con la clase page. Verifica la estructura del documento HTML." */
