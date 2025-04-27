@@ -14,13 +14,15 @@
 
 .header__title {
     font-size: 96px;
-    font-weight: bolder;
+    font-weight: 900;
     text-align: center;
+    line-height: 1.1;
 }
 
 .header__subtitle {
     font-size: 30px;
     text-align: center;
+    line-height: 1.2;
 }
 
 .header__image {
