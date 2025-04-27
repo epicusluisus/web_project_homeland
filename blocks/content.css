@@ -1,0 +1,57 @@
+.content {
+    max-width: 830px;
+    padding: 90px 24px 0;
+}
+
+.content__title {
+    font-size: 54px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.content__quote-container {
+    max-width: 738px;
+    display:flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.content__quote {
+    font-size: 24px;
+}
+
+.content__quote-author {
+    font-size: 24px;
+    align-self: flex-end;
+}
+
+.content__text {
+    max-width: 722px;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 1000px) { 
+    .content {
+        max-width: 720px;
+        padding: 90px 24px 0;
+        margin: auto;
+    }
+
+    .content__title {
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .content {
+        max-width: 288px;
+        padding: 64px 16px 0;
+    }
+
+    .content__title {
+        font-size: 32px;
+    }
+}

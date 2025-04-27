@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    padding: 92px 0 24px;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 420px) {
+    .footer {
+        padding-top: 64px;
+    }
+}

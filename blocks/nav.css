@@ -14,3 +14,13 @@
     margin-top: 22px;
     max-width: 254px;
 }
+
+@media screen and (max-width: 420px) {
+    .nav__logo {
+        max-width: 24px;
+    }
+
+    .nav__title {
+        max-width: 188px;
+    }
+}
