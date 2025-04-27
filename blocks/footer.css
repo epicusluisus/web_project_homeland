@@ -9,6 +9,12 @@
     color: #fff;
 }
 
+.footer__copyright::before {
+    content: '\00A9'
+}
+
+/* 00A9 = copyright */
+
 
 @media screen and (max-width: 420px) {
     .footer {
