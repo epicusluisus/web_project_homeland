@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 49fr 51fr;
     grid-template-rows: auto auto;
-    gap: 38px 48px;
+    gap: 48px 40px;
     margin-bottom: 80px;
 }
 
@@ -68,4 +68,60 @@
     padding:13px 20px;
     color: white;
     max-width: 289px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .tour {
+        padding: 92px 24px 0;
+    }
+
+    .tour__card {
+        gap: 42px 28px;
+    }
+
+    .tour__title {
+        font-size: 42px;
+    }
+
+    .tour__text-box {
+        font-size: 16px;
+    }
+}
+
+/*
+@media screen and (max-width: 555px) {
+    .tour {
+        padding: 62px 0 0;
+    }
+
+    .tour__card {
+        grid-template-columns: 1fr;
+    }
+
+    .tour__title {
+        font-size: 32px;
+        max-width:  288px;
+    }
+
+    .tour__artist {
+        grid-area: 2 / 1;
+        max-width:  288px;
+    }
+
+    .tour__image {
+        grid-area: 3 / 1;
+    }
+
+    .tour__right-column {
+
+    }
+}
+
+*/
+
+@media screen and (max-width: 555px) {
+    .tour__card {
+        grid-template-areas:  ;
+    }
 }
