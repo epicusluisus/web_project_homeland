@@ -47,7 +47,7 @@
 }
 
 .tour__image:hover {
-    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
 }
 
 .tour__text-box {
@@ -73,10 +73,13 @@
     padding:13px 20px;
     color: white;
     max-width: 289px;
-    height: 48px;
+    height: 22px;
     grid-area: button;
-    font-weight: 600;
+    font-weight: 500;
     box-shadow: 10px 10px 25px 0px #00000080;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
 }
 
 .tour__button:hover {
