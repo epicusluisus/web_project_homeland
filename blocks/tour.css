@@ -103,10 +103,14 @@
     .tour__text-box {
         font-size: 16px;
     }
+
+    .tour__button {
+        height: fit-content;
+    }
 }
 
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 580px) {
     .tour {
         padding: 62px 0 0;
     }
