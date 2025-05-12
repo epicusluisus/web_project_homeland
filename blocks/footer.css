@@ -16,7 +16,7 @@
 /* 00A9 = copyright */
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .footer {
         padding-top: 64px;
     }

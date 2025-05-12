@@ -15,7 +15,7 @@
     max-width: 254px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .nav__logo {
         max-width: 24px;
     }
