@@ -6,13 +6,17 @@
 .tour__card {
     display: grid;
     grid-template-columns: 49fr 51fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+        "title artist"
+        "image text"
+        "button text";
     gap: 48px 40px;
     margin-bottom: 80px;
 }
 
 .tour__title {
-    grid-column: 1;
+    grid-area: title;
     font-size: 72px;
     font-weight: 900;
     display: flex;
@@ -20,7 +24,7 @@
 }
 
 .tour__artist {
-    grid-area: 1 / 2;
+    grid-area: artist;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -32,24 +36,24 @@
     content: "ARTISTAS";
     font-size: 12px;
     color: #AAA;
-    margin-bottom: 8px;;
-}
-
-.tour__right-column {
-    grid-row: 2;
-    gap: 48px;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 8px;
 }
 
 .tour__image {
     width: 100%;
+    grid-area: image;
+    box-shadow: 10px 10px 25px 0px #00000080;
+}
+
+.tour__image:hover {
+    -webkit-filter: brightness(50%);
 }
 
 .tour__text-box {
     grid-area: 2 / 2;
     line-height: 1.6;
     font-size: 18px;
+    grid-area: text;
 }
 
 .tour__text {
@@ -68,6 +72,14 @@
     padding:13px 20px;
     color: white;
     max-width: 289px;
+    height: 48px;
+    grid-area: button;
+    font-weight: 600;
+    box-shadow: 10px 10px 25px 0px #00000080;
+}
+
+.tour__button:hover {
+    background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
 }
 
 
@@ -89,39 +101,32 @@
     }
 }
 
-/*
+
 @media screen and (max-width: 555px) {
     .tour {
         padding: 62px 0 0;
     }
 
     .tour__card {
-        grid-template-columns: 1fr;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            ". title ."
+            ". artist ."
+            "image image image"
+            ". text ."
+            ". button .";
+            grid-gap: 30px 0;
     }
-
     .tour__title {
         font-size: 32px;
-        max-width:  288px;
     }
 
-    .tour__artist {
-        grid-area: 2 / 1;
-        max-width:  288px;
+    .tour__button {
+        max-width: 100%;
     }
 
     .tour__image {
-        grid-area: 3 / 1;
-    }
-
-    .tour__right-column {
-
-    }
-}
-
-*/
-
-@media screen and (max-width: 555px) {
-    .tour__card {
-        grid-template-areas:  ;
+        box-shadow: none;
     }
 }
