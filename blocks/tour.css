@@ -43,7 +43,7 @@
 .tour__image {
     width: 100%;
     grid-area: image;
-    box-shadow: 10px 10px 25px 0px #00000080;
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 .tour__image:hover {
@@ -76,7 +76,6 @@
     height: 22px;
     grid-area: button;
     font-weight: 500;
-    box-shadow: 10px 10px 25px 0px #00000080;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
